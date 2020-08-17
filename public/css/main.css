@@ -1,0 +1,473 @@
+@import "flex.css";
+@import "grid.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+	background-color: #DCDCDC;
+}
+
+.container {
+    max-width: 1200px; 960 - 1200 */
+    height: 100%;
+    margin: 0 auto;
+}
+
+.adaptive {
+  display: inline-block;
+  width: 100%;
+}
+
+/* логотип */
+
+.logo {
+	margin: 100px 0 120px;
+}
+
+.logo img {
+	display: block;
+  width: 50%;
+  min-width: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Общие классы для заголовков и ссылок */
+
+.big_headline {
+  font-family: Georgia, serif;
+  font-weight: 600;
+  text-transform: capitalize;    
+  color: #055555;   
+  font-size: 3em;
+}
+
+.middle_headline {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-transform: capitalize; 
+  color: #921026;
+  font-size: 1.5em;
+}
+
+.recipe {
+  color: #3d3d3d;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.get_it_recipe {
+  display: inline;
+  color: #3d3d3d;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Noto Sans, sans-serif;
+  text-transform: uppercase;
+  border: 1px #3d3d3d solid;
+  padding: 5px;
+}
+
+.get_it_recipe:hover {
+  color: #f8f8f8;
+  background-color: #3d3d3d;
+}
+
+.most_popular_recipe {
+  color: #3d3d3d;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: normal;
+  text-transform: capitalize; 
+  font-size: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+/*------------- меню навигации -------------*/
+
+.nav {
+	height: 120px;
+	background-color: #f8f8f8;
+}
+
+.nav img {
+	height: 40px;
+}
+
+.nav a {
+    color: #3d3d3d;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Noto Sans, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.drop {
+	position: relative;
+}
+
+/*------------- выпадающее меню -------------*/
+
+.drop-menu {
+  display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-top: 20px solid #f8f8f8;
+    top: 100%;
+    left: 50px;
+    margin-left: -100%;
+    padding: 20px;
+}  
+
+.drop-menu a {
+	color: #b7b7b7;
+    font-size: 14px;
+    line-height: 2em;
+}  
+
+.drop-menu a:hover {
+    color: #3d3d3d;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+.drop:hover .drop-menu {
+  display: block;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.search {
+  position: relative;
+}
+
+.search input {
+  padding: 5px 15px;
+  color: #3d3d3d;
+  outline: none;
+  text-transform: uppercase;
+  font-family: Noto Sans, sans-serif;
+}
+
+.search button {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #3d3d3d;
+    height: 100%;
+    width: 3em;
+    right: 0px;
+}
+
+.search button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #f8f8f8;
+}
+
+/*------------- топ недели -------------*/
+
+.top-of-week {
+  margin-top: 3em;
+  padding-left: 3em;
+  background-color: #f7f8f8;
+}
+
+.top-of-week .photo {
+    background-image: url(img/banana_cake.png);
+}
+
+.top-of-week h2 {
+    margin-bottom: 1em;
+}
+.top-of-week img {
+  height: 100%;
+  width: 100%;
+}
+/*------------- самые популярные рецепты -------------*/
+
+.most_popular {
+  margin-top: 3em;
+  padding-top: 1em;
+  background-color: #f7f8f8;
+}
+
+.most_popular div {
+  padding-top: 1em;
+}
+.most_popular div a {
+    display: block;
+    text-align: center;
+  }
+
+.most_popular div div img {
+    width: 100%;
+    height: auto;
+}
+.feed_back {
+  text-align: center;
+}
+.feed_back :nth-child(1):before {
+  content: "\f017";
+  font-family: FontAwesome;
+}
+
+.feed_back :nth-child(1) {
+  padding: 0px 5px 0px 5px;
+  border-right: 1px solid #3d3d3d;
+}
+
+.feed_back :nth-child(2):before {
+  content: "\f0e5";
+  font-family: FontAwesome;
+}
+
+.feed_back :nth-child(3):before {
+  content: "\f06e";
+  font-family: FontAwesome;
+}
+
+/*------------- секция авторы и партнеры -------------*/
+
+.authors {
+  margin-top: 3em;
+  padding-top: 1em;
+}
+.authors h3 {
+  font-style: oblique;
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+.authors h4 {
+  font-style: oblique;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+.author_section {
+  background-color: #f7f8f8;
+  padding: 20px;
+  width: 49%;
+}
+.author_section div img {
+  width: 100%;
+}
+.author_content {
+  padding-left: 10px;
+}
+.authors .line {
+  height: 2px;
+  background-color: #555555;
+  opacity: 0.3;
+  margin-bottom: 2em;
+}
+
+.author_name {
+  font-family: Georgia, serif;
+  font-weight: 600;
+  text-transform: capitalize;      
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.author_country {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-transform: capitalize;      
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.signature {
+  padding-left: 50%;
+}
+
+/* стили для адаптива */
+
+@media (max-width: 1200px) {
+
+  .top-of-week {
+    padding-left: 0px;
+  }
+  .top-of-week {
+    flex-direction: column;
+  }
+  .content h1 {
+    margin: auto;
+  }
+  .content a {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .content {
+    padding: 1em;
+    text-align: center;
+  }
+  .most_popular {
+    padding: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .authors {
+    flex-direction: column;
+  }
+  .author_section {
+   margin-bottom: 2em;
+   width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .nav {
+    padding: 20px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .nav img {
+    height: 5em;
+    padding-bottom: 1em;
+  }
+  .nav div {
+    padding-bottom: 1em;
+  }
+  .nav a {
+    padding-bottom: 1em;
+  }
+  .drop-menu {
+    border-top: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .most_popular {
+    grid-template-columns: 1fr;
+  }
+}
+/*------------- форма регистрации -------------*/
+
+.sign_in {
+  display: block;
+  position: fixed;
+  padding: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*------------- форма авторизации -------------*/
+
+.background_auth {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #3a3e3e;
+  opacity: 0.5;
+}
+
+.log_in {
+  display: block;
+  position: fixed;
+  padding: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*------------- общие для форм стили -------------*/
+
+.display_none {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+.modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-family: Noto Sans, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.form input{
+  opacity: 1;
+}
+
+.close-modal {
+    position: absolute;
+    background-color: #3d3d3d;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Noto Sans, sans-serif;
+}
+
+.modal input {
+  padding: 5px;
+  background-color: #DCDCDC;
+  border: 2px solid #3d3d3d;
+}
+
+.modal input:focus {
+    outline: none;
+}
+
+.submit:last-child {
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Noto Sans, sans-serif;
+  font-weight: normal;
+}
+
+.modal input::-webkit-input-placeholder {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+    color: #3d3d3d;
+}
+
+.swap {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-family: Noto Sans, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
